@@ -1,0 +1,20 @@
+name: JustLanguageAPI
+main: PJZ9n\JustLanguageAPI\main
+version: 1.0.0
+api: [4.0.0]
+load: POSTWORLD
+author: PJZ9n
+desctiption: Just Language API
+website: http://asvd.net/
+permissions:
+  justlanguageapi.*:
+    default: op
+    description: Allows to control all of functions in JustLanguageAPI
+    children:
+      justlanguageapi.command.*:
+        default: op
+        description: Allows to use all of commands in JustLanguageAPI
+        children:
+          justlanguageapi.command.lang:
+            default: true
+            description: Allows to lang select
